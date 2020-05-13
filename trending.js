@@ -7,7 +7,7 @@ const green = chalk.green
 
 const table = new Table({
   head: [green('Author'), green('Repository'), green('Url'), green('Description'), green('Language'), green('Stars')],
-  colWidths: [20, 30, 20, 60, 20, 8]
+  colWidths: [20, 30, 60, 60, 20, 8]
 })
 
 module.exports = async function (language, since, spokenLanguage) {
