@@ -2,6 +2,7 @@
   "name": "github-trend-cli",
   "version": "1.0.0",
   "description": "CLI to show trending projects",
+  "repository": "MohamedDounnani94/github-trend-cli",
   "main": "index.js",
   "author": "Mohamed Dounnani",
   "license": "MIT",
