@@ -43,7 +43,7 @@ async function fetchRepositories({
             author,
             repositoryName,
             url: `${GITHUB_URL}${relativeUrl}`,
-            description: _.truncate(description, { length: 40 }),
+            description,
             language: lang,
             stars,
           }, _.isNil)
