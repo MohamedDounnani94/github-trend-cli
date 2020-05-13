@@ -1,0 +1,30 @@
+{
+  "name": "github-trend-cli",
+  "version": "1.0.0",
+  "description": "CLI to show trending projects",
+  "main": "index.js",
+  "author": "Mohamed Dounnani",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "bin": {
+    "github-trend-cli": "index.js"
+  },
+  "keywords": [
+    "github",
+    "github trending topics",
+    "projects"
+  ],
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cli-check-node": "^1.3.0",
+    "cli-handle-unhandled": "^1.1.0",
+    "cli-table3": "^0.6.0",
+    "cli-welcome": "^1.4.0",
+    "lodash": "^4.17.15",
+    "meow": "^7.0.0",
+    "node-fetch": "^2.6.0"
+  }
+}
