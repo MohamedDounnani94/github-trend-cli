@@ -9,7 +9,6 @@ const table = new Table({
   head: [green('Author'), green('Repository'), green('Url'), green('Description'), green('Language'), green('Stars')]
 })
 
-
 module.exports = async function (language, since, spokenLanguage) {
   const results = await fetch.fetchRepositories({
     language,

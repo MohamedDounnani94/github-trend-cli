@@ -9,7 +9,7 @@ foo-bar: $ npx github-trend-cli
 # Usage
 ```shell script
 foo-bar: $ npx github-trend-cli help
-foo-bar: $ npx github-trend-cli javaScript dialy en
+foo-bar: $ npx github-trend-cli javaScript daily en
 foo-bar: $ npx github-trend-cli python monthly any
 foo-bar: $ npx github-trend-cli weekly any
 ```

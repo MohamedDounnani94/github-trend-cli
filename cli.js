@@ -12,9 +12,9 @@ const table = new Table({
 })
 
 table.push(
-  ['github-trend-cli', 'JavaScript', 'dialy', 'en'],
+  ['github-trend-cli', 'JavaScript', 'daily', 'en'],
   ['github-trend-cli', 'JavaScript', 'weekly', 'any'],
-  ['github-trend-cli', 'any', 'dialy', 'monthly'],
+  ['github-trend-cli', 'any', 'daily', 'monthly'],
 )
 
 module.exports = meow(
@@ -23,7 +23,7 @@ Usage
   ${green(`github-trend-cli`)} ${cyan(`<language>`)} ${blue(`<since>`)} ${yellow(`<spokenLanguage>`)}
 Commands
   ${cyan(`language`)}           Language of repo (Java, JavaScript, Python, ...)
-  ${cyan(`since`)}              Dialy, Weekly or Monthly
+  ${cyan(`since`)}              Daily, Weekly or Monthly
   ${cyan(`spokenLanguage`)}     Spoken Language (en, fr, ...)
 Additional Commands
   ${green('github-trend-cli')} ${cyan('help')}

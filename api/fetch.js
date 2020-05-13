@@ -11,6 +11,9 @@ async function fetchRepositories({
   since = 'daily',
   spokenLanguage = '',
 } = {}) {
+  if(language === 'any') language = ''
+  if(since === 'any') since = 'daily'
+  if(spokenLanguage === 'any') spokenLanguage = ''
   const url = `${GITHUB_URL}/trending/${language}?since=${since}&spoken_language_code=${spokenLanguage}`
   try {
     const data = await fetch(url)
@@ -36,12 +39,11 @@ async function fetchRepositories({
               .replace(',', '') || 0,
             10
           )
-
           return _.omitBy({
             author,
             repositoryName,
             url: `${GITHUB_URL}${relativeUrl}`,
-            description: _.truncate(description, { length: 100 }),
+            description: _.truncate(description, { length: 40 }),
             language: lang,
             stars,
           }, _.isNil)
